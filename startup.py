@@ -17,9 +17,6 @@ def get_header(access_token):
 		'cache-control': "no-cache"
 	}
 
-def reverse_tracks(tracks):
-	return tracks[::-1]
-
 def remove_toto_africa_from_playlist(access_token="", playlist_id=-1):
 	print("Removing toto africa from {}".format(playlist_id))
 	url = "https://api.spotify.com/v1/playlists/{}/tracks".format(playlist_id)
